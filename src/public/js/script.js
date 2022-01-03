@@ -6,7 +6,7 @@ const messageTwo = document.querySelector("#message-2");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   // console.log(loc.value);
-  fetch(`http://localhost:3000/weather?address=${loc.value}`).then((response) => {
+  fetch(`/weather?address=${loc.value}`).then((response) => {
     messageOne.innerHTML = "<h2>Loading...</h2>";
     messageOne.textContent = "";
     messageTwo.textContent = "";
